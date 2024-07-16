@@ -19,12 +19,14 @@ também é necessário ter instalado em seu computador o Node na versão 20.15.1
 
 ## Acessando a aplicação
 
-Após os projetos estarem no ar, você pode acessar a tela de login através da rota `http://localhost:5173` e utilizar a aplicação da forma que preferir.
+Após os projetos estarem no ar, você pode acessar a tela de login através da rota `http://localhost:5173/login` e será necessário realizar um cadastro prévio para fazer login.
 
 ## Sobre o projeto
 
 Basicamente, eu criei uma aplicação onde o usuário realizará um cadastro prévio e, após isso, poderá realizar o login. Depois de logado, o usuário verá as informações que ele cadastrou e vagas nas quais ele pode aplicar.
 
 O projeto foi desenvolvido utilizando Kotlin com Spring Boot no backend e, para a interface, foi utilizado React + Vite.
+
+Foi utilizado o banco de dados H2 para a persistência de dados, juntamente com Flyway para a criação de tabelas via migrations. Sempre que a aplicação é desligada, o banco de dados reinicia e será necessário realizar o processo de cadastro novamente para acessar as telas.
 
 Bom divertimento!
