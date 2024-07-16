@@ -17,7 +17,7 @@ function Home() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [telephone, setTelephone] = useState("");
-  const [birthDate, setBirthDate] = useState("");
+  const [birthDate, setBirthDate] = useState([]);
 
   const[pageStatus, setPageStatus] = useState("")
 
@@ -42,7 +42,7 @@ function Home() {
       setName(content.name)
       setEmail(content.email)
       setTelephone(content.telephone)
-      setBirthDate(content.setBirthDate)
+      setBirthDate(content.birthDate)
 
       }
     )()
@@ -88,12 +88,12 @@ const apply = async (event) => {
   return (
     <><ToastContainer /><div className="home-container">
       <div className="dashboard">
-        <h2>Área Restrita do usuário {name}</h2>
+        <h2><strong>Área Restrita do usuário</strong> {name}</h2>
         <div className="user-info">
-          <p><strong>Name:</strong> {name}</p>
+          <p><strong>Nome:</strong> {name}</p>
           <p><strong>Email:</strong> {email}</p>
-          <p><strong>Phone:</strong> {telephone}</p>
-          <p><strong>Date of Birth:</strong> {birthDate}</p>
+          <p><strong>Telefone:</strong> {telephone}</p>
+          <p><strong>Data de aniversário:</strong> {`${birthDate[2]}/${birthDate[1]}/${birthDate[0]}`}</p>
           <button className="logout-button" onClick={logout}>Log Out</button>
         </div>
       </div>
