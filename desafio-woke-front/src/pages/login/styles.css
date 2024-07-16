@@ -1,0 +1,91 @@
+.container{
+    width: 450px;
+    background-color: rgb(224, 224, 231);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.container .input-field {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px auto;
+}
+
+.input-field input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 45px;
+}
+
+.input-field input::placeholder{
+    color: rgb(138, 132, 132);;
+}
+
+.input-field .icon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: rgb(132, 138, 138);
+}
+
+.container .recall-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.recall-forget label {
+    color: black;
+}
+
+.recall-forget input {
+    margin-right: 5px;
+}
+
+.recall-forget a,
+.signup-link p a{
+    text-decoration: none;
+}
+
+.recall-forget a:hover,
+.signup-link p a:hover {
+    text-decoration: underline;
+}
+
+.container button{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    color: black;
+    font-size: 16px;
+}
+
+.container button:hover {
+    background-color: rgb(194, 201, 201);
+    box-shadow: 0 0 10px rgb(132, 138, 138);
+}
+
+.container .signup-link {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
