@@ -5,7 +5,7 @@ também é necessário ter instalado em seu computador o Node na versão 20.15.1
 
 ## Passos para executar o projeto
 
-1. Clone os repositórios de back e frontend.
+1. Clone os repositórios de backend e frontend.
 
 2. No projeto de frontend:
     - Abra o projeto no VSCode.
